@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+    <title>Hero</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        body {
+        margin: 0;
+        font-family: 'Archivo', sans-serif;
+        background: url(img/Hero\ background.png);
+        box-sizing: border-box;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        }
+
+        .first_task {
+        display: flex;
+        flex-direction: column;
+        }
+
+        nav {
+        color: #000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 10px;
+        margin-left: 100px;
+        }
+
+        .logo a {
+        height: 40px;
+        width: auto;
+        text-decoration: none;
+        color: #000;
+        font-size: 34px;
+        font-weight: 700;
+        }
+
+        .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+
+        .menu li {
+        margin-right: 60px;
+        }
+
+        .menu li a {
+        color: #000;
+        text-decoration: none;
+        position: relative;
+        font-size: 20px; /* Keeping the original font size */
+        }
+
+        .menu li a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 0;
+        height: 3px;
+        background-color: transparent;
+        transition: background-color 0.3s ease, width 0.3s ease;
+        }
+
+        .menu li a:hover {
+        color: black;
+        }
+
+        .menu li a:hover::after {
+        background-color: orange;
+        width: 60%;
+        left: 20%;
+        right: 20%;
+        }
+
+        .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        margin-bottom: -140px;
+        margin-left: 100px;
+        }
+
+        .hero-content {
+        width: 100%;
+        margin-left: 100px;
+        margin-bottom: 150px;
+        }
+
+        .hero-content .txt {
+        font-size: 75px;
+        font-weight: 700;
+        font-family: 'Archivo', sans-serif;
+        margin-bottom: 0;
+        margin-left: 20px;
+        }
+
+        .hero-content .txt2 {
+        font-size: 20px;
+        color: #000;
+        top: -300px;
+        margin-left: 20px;
+        }
+
+        .hero-image img {
+        width: 100%;
+        height: auto;
+        }
+
+        .items {
+        display: flex;
+        margin-left: 220px;
+        }
+
+        .card1,
+        .card2,
+        .card3 {
+        padding: 25px;
+        height: 100px;
+        width: 140px;
+        font-weight: 400;
+        margin-right: 20px;
+        }
+
+        .card2,
+        .card3 {
+        background:rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        margin-right:50px;
+        opacity: 0.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        }
+        .card2,
+        .card3{
+        opacity: 1;
+        }
+
+        .imgicon {
+        height: 50px;
+        width: 60px;
+        align-items: center;
+        }
+
+        .text {
+        font-size: 20px;
+        font-weight: 100;
+        font-family: 'Archivo', sans-serif;
+        margin: 0 auto;
+        padding: 10px;
+        opacity: 0.4;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="first_task">
+        <nav>
+            <div class="logo">
+                <a href="#">Dynamicflow</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="icon">
+                <a href="#"><img src="img/bar.png" alt="bar"></a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="txt">Knowledge is an<br>
+                    investment that <br>
+                    will never lose</p>
+                <p class="txt2">Improve your skill and knowledge for better <br>
+                    career and future.</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/young lady.png" alt="lady_Image">
+            </div>
+        </div>
+
+        <div class="items">
+          <div class="card1">
+              <h1>Our Programs</h1>
+          </div>
+          <div class="card2">
+            <img class="imgicon" src="img/02.png" alt="">
+            <h6 class="text">Development</h6>
+            </div>
+          
+          <div class="card3">
+              <img class="imgicon" src="img/03.png" alt=""> 
+              <h6 class="text">IT & Software</h6>
+          </div>
+      </div>
+    </div>
+</body>
+
+</html>
